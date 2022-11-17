@@ -13,3 +13,6 @@ function solution(num) {
 
   return answer;
 }
+
+/* leo */
+const solution2 = (num) => num % 2 === 0 ? 'Even' : 'Odd';

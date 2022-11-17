@@ -14,4 +14,5 @@ function solution(arr) {
   return answer;
 }
 
-
+/* leo */
+const solution2 = (arr) => arr.reduce((acc, cur) => acc + cur, 0) / arr.length;
