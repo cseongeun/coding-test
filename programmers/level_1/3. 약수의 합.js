@@ -5,3 +5,14 @@
  * 제한 사항
  * n은 0 이상 3000이하인 정수입니다.
  */
+ function solution(n) {
+  var answer = 0;
+  
+  var denom = 1;
+  while (denom <= n) {
+      if (n % denom == 0) answer += denom;
+      denom += 1;
+  }
+  
+  return answer;
+}
