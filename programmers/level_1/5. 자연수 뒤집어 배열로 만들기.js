@@ -8,3 +8,16 @@ n은 10,000,000,000이하인 자연수입니다.
 
 /* leo */
 const solution = (n) => [...String(n)].map((num) => Number(num)).reverse();
+
+/* eun */
+function solution(n) {
+  var answer = [];
+
+  answer = n
+    .toString()
+    .split("")
+    .reverse()
+    .map((_) => parseInt(_));
+
+  return answer;
+}

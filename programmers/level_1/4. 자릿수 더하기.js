@@ -9,9 +9,9 @@ N의 범위 : 100,000,000 이하의 자연수
 
 /* leo */
 function solution(n) {
-    const num = [...String(n)];
-    const result = num.reduce((arr, cur) => arr + parseInt(cur), 0);
-    return result;
+  const num = [...String(n)];
+  const result = num.reduce((arr, cur) => arr + parseInt(cur), 0);
+  return result;
 }
 /*
 숫자를 배열로 변경하는 방법
@@ -19,3 +19,14 @@ function solution(n) {
 parseInt : 문자열 인자를 파싱해 정수를 반환함
 */
 
+/* eun */
+function solution(n) {
+  var answer = 0;
+
+  answer = n
+    .toString()
+    .split("")
+    .reduce((acc, cur) => parseInt(acc) + parseInt(cur), 0);
+
+  return answer;
+}
