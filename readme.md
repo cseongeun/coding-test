@@ -25,5 +25,15 @@ Array.from({ length: n }, (_, i) => i + 1)
 str1.indexOf(str2) // 없으면 -1 
 ```
 
+* 정수(n) 확인
+```
+Number.isInteger(n)
+```
 
+* 거듭제곱 / 제곱근
+```
+Math.pow(n,e)
+
+Math.sqrt(n)
+``` 
 
