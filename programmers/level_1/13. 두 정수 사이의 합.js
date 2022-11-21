@@ -21,17 +21,3 @@ function solution(a, b) {
 
   return result.reduce((acc, cur) => acc + cur);
 }
-
-/* eun */
-function solution(a, b) {
-  var answer = 0;
-
-  let [s, e] = [a, b].sort();
-
-  while (s <= e) {
-    answer += s;
-    s += 1;
-  }
-
-  return answer;
-}
