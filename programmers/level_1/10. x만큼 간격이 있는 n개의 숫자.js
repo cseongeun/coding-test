@@ -10,3 +10,13 @@ n은 1000 이하인 자연수입니다.
 /* leo */
 const solution = (x, n) => [...Array(n)].map((_, i) => (i + 1) * x);
 
+/* eun */
+function solution(x, n) {
+  var answer = [];
+
+  for (let i = 0; i < n; i += 1) {
+    answer.push(x + x * i);
+  }
+
+  return answer;
+}

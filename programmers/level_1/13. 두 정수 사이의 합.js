@@ -11,13 +11,27 @@ a와 b의 대소관계는 정해져있지 않습니다.
 
 /* leo */
 function solution(a, b) {
-    const min = Math.min(a, b);
-    const max = Math.max(a, b);
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
 
-    let result = [];
-    for (let i = min; i <= max; i++) {
-        result.push(i);
-    }
+  let result = [];
+  for (let i = min; i <= max; i++) {
+    result.push(i);
+  }
 
-    return result.reduce((acc, cur) => acc + cur);
+  return result.reduce((acc, cur) => acc + cur);
+}
+
+/* eun */
+function solution(a, b) {
+  var answer = 0;
+
+  let [s, e] = [a, b].sort();
+
+  while (s <= e) {
+    answer += s;
+    s += 1;
+  }
+
+  return answer;
 }

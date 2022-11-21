@@ -8,11 +8,27 @@ n은 1이상 8000000000 이하인 자연수입니다.
 
 /* leo */
 function solution(n) {
-    const arr = [...String(n)].sort((a, b) => b - a);
-    return Number(arr.join(''));
+  const arr = [...String(n)].sort((a, b) => b - a);
+  return Number(arr.join(""));
 }
 
 /*
 n + "".split("") : 정수를 문자열 배열로 만들기
 +s : string -> number
 */
+
+/* eun */
+function solution(n) {
+  var answer = 0;
+  
+  answer = parseInt(
+    n
+      .toString()
+      .split("")
+      .sort()
+      .reverse()
+      .map((_) => parseInt(_))
+      .join("")
+  );
+  return answer;
+}

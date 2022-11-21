@@ -26,3 +26,22 @@ function solution(s){
 .split(s) : 지정한 구분자를 이용해 여러 개의 문자열로 나눔
 .match(정규식) : 문자열이 정규식과 매치되는 부분을 검색하고 배열로 반환함
 */
+
+/* eun */
+function solution(s){
+    var answer = true;
+
+    s.split('').reduce((acc, cur) => {
+
+        if (cur.toLowerCase() == 'p') acc[0] += 1;
+        if (cur.toLowerCase() == 'y') acc[1] += 1;
+
+        const [nump, numy] = acc;
+        answer = nump + numy == 0 || nump == numy 
+
+        return acc;
+        
+    }, [0,0])
+
+    return answer;
+}

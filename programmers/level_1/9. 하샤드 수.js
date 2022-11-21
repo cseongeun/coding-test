@@ -8,12 +8,27 @@ x는 1 이상, 10000 이하인 정수입니다.
 
 /* leo */
 function solution(x) {
-    const arr = [...String(x)];
-    const sum = arr.reduce((acc, cur) => acc + parseInt(cur), 0);
+  const arr = [...String(x)];
+  const sum = arr.reduce((acc, cur) => acc + parseInt(cur), 0);
 
-    return x % sum === 0;
+  return x % sum === 0;
 }
 /*
 String(n).split('') : 정수 -> 문자열 배열
 속도는 do while이 빠름
 */
+
+/* eun */
+function solution(x) {
+  var answer = true;
+
+  answer =
+    x %
+      x
+        .toString()
+        .split("")
+        .reduce((acc, cur) => parseInt(acc) + parseInt(cur), 0) ==
+    0;
+
+  return answer;
+}

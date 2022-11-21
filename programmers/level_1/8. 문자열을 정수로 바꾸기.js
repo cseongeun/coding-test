@@ -15,3 +15,13 @@ const solution = (s) => Number(s);
 s/1 : 사칙연산 시 문자가 자동으로 파싱
 +s : 문자열과 숫자열의 사칙연산은 숫자가 나오게 됨
 */
+
+
+/* eun */
+function solution(s) {
+  var answer = 0;
+  
+  answer = Number(s)
+  
+  return answer;
+}
