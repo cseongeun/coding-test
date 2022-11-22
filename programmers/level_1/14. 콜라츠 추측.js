@@ -13,17 +13,37 @@
 
 /* leo */
 function solution(num) {
-    let index = 0;
-    let result = num;
+  let index = 0;
+  let result = num;
 
-    while(result !== 1 && index < 500) {
-        if (result % 2 === 0) {
-            result = result / 2;
-        } else {
-            result = result * 3 + 1;
-        }
-        index++;
+  while (result !== 1 && index < 500) {
+    if (result % 2 === 0) {
+      result = result / 2;
+    } else {
+      result = result * 3 + 1;
+    }
+    index++;
+  }
+
+  return index === 500 ? -1 : index;
+}
+
+/* eun */
+function solution(num) {
+  var answer = 0;
+
+  let count = 0;
+
+  while (count <= 500 && num !== 1) {
+    if (num % 2 == 0) {
+      num = num / 2;
+    } else {
+      num = num * 3 + 1;
     }
 
-    return index === 500 ? -1 : index;
+    count += 1;
+  }
+
+  answer = num == 1 ? count : -1;
+  return answer;
 }

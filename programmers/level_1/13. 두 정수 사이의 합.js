@@ -21,3 +21,17 @@ function solution(a, b) {
 
   return result.reduce((acc, cur) => acc + cur);
 }
+
+/* eun */
+function solution(a, b) {
+  var answer = 0;
+
+  const [max, min] = [Math.max(a, b), Math.min(a, b)];
+
+  answer = Array.from({ length: max - min + 1 }, (_, i) => min + i).reduce(
+    (acc, cur) => acc + cur,
+    0
+  );
+
+  return answer;
+}

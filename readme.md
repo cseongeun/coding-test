@@ -37,3 +37,17 @@ Math.pow(n,e)
 Math.sqrt(n)
 ``` 
 
+
+* 최솟값, 최댓값
+```
+Math.min(1,2,3) // 1
+Math.max(1,2,3) // 3
+    
+arr = [1, 2, 3]
+
+Math.min(arr) // NaN
+Math.max(arr) // NaN
+
+Math.min.apply(Math, arr) // 1
+Math.max.apply(Math, arr) // 3 
+```

@@ -10,8 +10,8 @@ seoul의 원소는 길이 1 이상, 20 이하인 문자열입니다.
 
 /* leo */
 function solution(seoul) {
-    const index = seoul.findIndex(v => v === 'Kim');
-    return `김서방은 ${index}에 있다`;
+  const index = seoul.findIndex((v) => v === "Kim");
+  return `김서방은 ${index}에 있다`;
 }
 
 /*
@@ -19,3 +19,12 @@ indexOf : 인자로 요소를 받아 만족하는 첫 번째 식별자를 반환
 findIndex: 인자로 받은 판별 함수를 만족하는 첫 번째 식별자를 반환
 여기서는 indexOf를 사용하는게 조금 더 깔끔
 */
+
+/* eun */
+function solution(seoul) {
+  var answer = "";
+
+  answer = `김서방은 ${seoul.indexOf("Kim")}에 있다`;
+
+  return answer;
+}
