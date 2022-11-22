@@ -18,3 +18,16 @@ function solution(numbers) {
 
   return answer;
 }
+
+/* leo */
+function solution(numbers) {
+  let i = 0;
+  let num = 0;
+
+  while (i < 9) {
+    i++;
+    if (!numbers.includes(i)) num += i;
+  }
+
+  return num;
+}

@@ -20,3 +20,11 @@ function solution(absolutes, signs) {
 
   return answer;
 }
+
+/* leo */
+function solution(absolutes, signs) {
+  return absolutes.reduce((arr, cur, index) => arr + +((signs[index] ? '+' : '-') + cur), 0);
+}
+/*
+val * (signs[i] ? 1 : -1) : 이렇게 +/- 부호 대신 -1/1 곱하기로 처리가 더 깔끔해보임
+*/

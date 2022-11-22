@@ -19,16 +19,21 @@ function solution(arr) {
   return answer;
 }
 
-
 /*
 Math.min(1,2,3) // 1
 Math.max(1,2,3) // 3
-    
+
 arr = [1, 2, 3]
 
 Math.min(arr) // NaN
 Math.max(arr) // NaN
 
 Math.min.apply(Math, arr) // 1
-Math.max.apply(Math, arr) // 3 
+Math.max.apply(Math, arr) // 3
 */
+
+/* leo */
+function solution(arr) {
+  arr.splice(arr.indexOf(Math.min(...arr)), 1);
+  return arr.length === 0 ? [-1] : arr;
+}
