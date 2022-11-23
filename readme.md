@@ -51,3 +51,12 @@ Math.max(arr) // NaN
 Math.min.apply(Math, arr) // 1
 Math.max.apply(Math, arr) // 3 
 ```
+
+* 배열 자르기(slice)
+```
+arr = [1,2,3,4,5,6,7]
+
+arr.slice(3,4)  // [4]
+arr.slice(3,5)  // [4, 5]
+
+```

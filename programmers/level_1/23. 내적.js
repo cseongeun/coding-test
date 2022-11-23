@@ -15,3 +15,15 @@ const solution = (a, b) => a.reduce((acc, cur, i) => acc + cur * b[i], 0);
 내적 공식 : a[0]*b[0] + a[1]*b[1] + ... + a[n-1]*b[n-1]
 */
 
+/* eun */
+function solution(a, b) {
+  var answer = 1234567890;
+
+  answer = a
+    .map((_a, i) => [_a, b[i]])
+    .reduce((acc, cur) => {
+      return (acc = acc + cur[0] * cur[1]);
+    }, 0);
+
+  return answer;
+}

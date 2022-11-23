@@ -8,12 +8,12 @@ n은 길이 10,000이하인 자연수입니다.
 
 /* leo */
 function solution(n) {
-  let result = '';
+  let result = "";
   for (let i = 0; i < n; i++) {
     if (i % 2 === 0) {
-      result += '수';
+      result += "수";
     } else {
-      result += '박';
+      result += "박";
     }
   }
 
@@ -23,3 +23,15 @@ function solution(n) {
 '수박'.repeat(n/2) + (n%2 === 1 ? '수' : '');
 '수박'.repeat(n).slice(0,n);
 */
+
+/* eun */
+/* eun */
+function solution(n) {
+  var answer = "";
+
+  while (answer.length < n) {
+    answer += answer.length % 2 == 0 ? "수" : "박";
+  }
+
+  return answer;
+}
