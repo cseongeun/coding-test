@@ -13,6 +13,7 @@
 a	b	result
 5	24	"TUE"
 */
+/* leo */
 const solution = (a,b) => {
   const day = ['THU','FRI','SAT','SUN','MON','TUE','WED'];
   const year = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
